@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Sections</title>
+</head>
+<body>
+    <h1>Table with thead, tbody, and tfoot</h1>
+    
+    <table>
+        <caption>Employee Salary Report</caption>
+        <thead>
+            <tr>
+                <th scope="col">Employee ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Department</th>
+                <th scope="col">Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>EMP001</td>
+                <td>John Smith</td>
+                <td>Engineering</td>
+                <td>$75,000</td>
+            </tr>
+            <tr>
+                <td>EMP002</td>
+                <td>Sarah Johnson</td>
+                <td>Marketing</td>
+                <td>$65,000</td>
+            </tr>
+            <tr>
+                <td>EMP003</td>
+                <td>Mike Williams</td>
+                <td>Sales</td>
+                <td>$60,000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Payroll:</td>
+                <td>$200,000</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <h2>Table Section Benefits</h2>
+    <ul>
+        <li>Semantic structure for accessibility</li>
+        <li>Allows independent scrolling of tbody</li>
+        <li>Helps with printing (thead repeats on each page)</li>
+        <li>Better for screen readers</li>
+    </ul>
+</body>
+</html>

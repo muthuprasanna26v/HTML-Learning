@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page Layout</title>
+</head>
+<body>
+    <header>
+        <h1>Tech Blog</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="featured">
+            <h2>Featured Article</h2>
+            <article>
+                <header>
+                    <h3>The Future of Web Development</h3>
+                    <p>Published on <time datetime="2024-01-20">January 20, 2024</time></p>
+                </header>
+                <p>Exploring the latest trends and technologies shaping the future of web development.</p>
+                <footer>
+                    <p>Written by John Doe</p>
+                </footer>
+            </article>
+        </section>
+        
+        <section class="articles">
+            <h2>Recent Articles</h2>
+            <article>
+                <header>
+                    <h3>Understanding CSS Grid</h3>
+                    <p><time datetime="2024-01-19">January 19, 2024</time></p>
+                </header>
+                <p>A comprehensive guide to CSS Grid layout system.</p>
+            </article>
+            
+            <article>
+                <header>
+                    <h3>JavaScript ES6+ Features</h3>
+                    <p><time datetime="2024-01-18">January 18, 2024</time></p>
+                </header>
+                <p>Modern JavaScript features you should know.</p>
+            </article>
+            
+            <article>
+                <header>
+                    <h3>Accessibility Best Practices</h3>
+                    <p><time datetime="2024-01-17">January 17, 2024</time></p>
+                </header>
+                <p>Making your websites accessible to everyone.</p>
+            </article>
+        </section>
+    </main>
+    
+    <aside>
+        <section class="categories">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#javascript">JavaScript</a></li>
+                <li><a href="#accessibility">Accessibility</a></li>
+            </ul>
+        </section>
+        
+        <section class="newsletter">
+            <h3>Newsletter</h3>
+            <p>Subscribe to our newsletter for the latest updates.</p>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </aside>
+    
+    <footer>
+        <p>&copy; 2024 Tech Blog. All rights reserved.</p>
+        <nav aria-label="Footer navigation">
+            <a href="#privacy">Privacy Policy</a> |
+            <a href="#terms">Terms of Service</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </footer>
+</body>
+</html>

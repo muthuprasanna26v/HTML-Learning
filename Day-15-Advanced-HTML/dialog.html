@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog Element</title>
+</head>
+<body>
+    <h1>Dialog Element</h1>
+    
+    <h2>Basic Dialog</h2>
+    <button onclick="document.getElementById('myDialog').showModal()">Open Dialog</button>
+    
+    <dialog id="myDialog">
+        <h2>Dialog Title</h2>
+        <p>This is a dialog box.</p>
+        <button onclick="document.getElementById('myDialog').close()">Close</button>
+    </dialog>
+    
+    <h2>Dialog with Form</h2>
+    <button onclick="document.getElementById('formDialog').showModal()">Open Form Dialog</button>
+    
+    <dialog id="formDialog">
+        <form method="dialog">
+            <h2>Contact Form</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            
+            <br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            
+            <br><br>
+            
+            <button value="cancel">Cancel</button>
+            <button value="confirm">Submit</button>
+        </form>
+    </dialog>
+    
+    <h2>Non-Modal Dialog</h2>
+    <button onclick="document.getElementById('nonModal').show()">Open Non-Modal Dialog</button>
+    
+    <dialog id="nonModal">
+        <p>This is a non-modal dialog. You can interact with the rest of the page.</p>
+        <button onclick="document.getElementById('nonModal').close()">Close</button>
+    </dialog>
+    
+    <h2>Dialog Attributes</h2>
+    <ul>
+        <li><strong>open</strong> - Dialog is visible</li>
+        <li><strong>showModal()</strong> - Opens as modal</li>
+        <li><strong>show()</strong> - Opens as non-modal</li>
+        <li><strong>close()</strong> - Closes the dialog</li>
+    </ul>
+    
+    <h2>Use Cases</h2>
+    <ul>
+        <li>Alerts and confirmations</li>
+        <li>Forms and input dialogs</li>
+        <li>Modals and popups</li>
+        <li>Help and information dialogs</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Navigation</title>
+</head>
+<body>
+    <h1>Accessible Navigation</h1>
+    
+    <h2>Skip Navigation Link</h2>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main id="main-content">
+        <h2>Main Content</h2>
+        <p>This is the main content of the page.</p>
+    </main>
+    
+    <h2>Breadcrumb Navigation</h2>
+    <nav aria-label="Breadcrumb">
+        <ol>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#electronics">Electronics</a></li>
+            <li aria-current="page">Laptops</li>
+        </ol>
+    </nav>
+    
+    <h2>Navigation Best Practices</h2>
+    <ul>
+        <li>Use semantic nav element</li>
+        <li>Provide aria-label for navigation regions</li>
+        <li>Include skip links for keyboard users</li>
+        <li>Use aria-current for current page</li>
+        <li>Ensure links are descriptive</li>
+        <li>Maintain logical tab order</li>
+    </ul>
+</body>
+</html>

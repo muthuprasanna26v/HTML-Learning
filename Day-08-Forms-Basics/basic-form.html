@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form</title>
+</head>
+<body>
+    <h1>Basic HTML Form</h1>
+    
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        
+        <br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        
+        <br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+    
+    <h2>Form Elements</h2>
+    <ul>
+        <li><strong>form</strong> - Container for form controls</li>
+        <li><strong>label</strong> - Label for form control</li>
+        <li><strong>input</strong> - Input field</li>
+        <li><strong>button</strong> - Submit button</li>
+    </ul>
+    
+    <h2>Important Attributes</h2>
+    <ul>
+        <li><strong>for</strong> on label - Associates label with input</li>
+        <li><strong>id</strong> on input - Unique identifier</li>
+        <li><strong>name</strong> on input - Name sent to server</li>
+        <li><strong>placeholder</strong> - Hint text</li>
+    </ul>
+</body>
+</html>

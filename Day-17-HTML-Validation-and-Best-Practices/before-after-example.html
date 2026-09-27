@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Example</title>
+</head>
+<body>
+    <h1>Before and After: HTML Quality Improvement</h1>
+    
+    <h2>BEFORE - Poor HTML</h2>
+    <pre><code>&lt;div&gt;
+  &lt;div&gt;Title&lt;/div&gt;
+  &lt;div&gt;
+    &lt;div&gt;Content here&lt;/div&gt;
+    &lt;img src="image.jpg"&gt;
+    &lt;input type="text"&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    
+    <h2>AFTER - Good HTML</h2>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Title&lt;/h1&gt;
+    &lt;/header&gt;
+    
+    &lt;main&gt;
+        &lt;p&gt;Content here&lt;/p&gt;
+        &lt;img src="image.jpg" alt="Descriptive alternative text"&gt;
+        
+        &lt;label for="username"&gt;Username:&lt;/label&gt;
+        &lt;input type="text" id="username" name="username"&gt;
+    &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    
+    <h2>Improvements Made</h2>
+    <ul>
+        <li>Added proper DOCTYPE and html structure</li>
+        <li>Used semantic elements (header, main) instead of divs</li>
+        <li>Added meta tags for charset and viewport</li>
+        <li>Added meaningful title</li>
+        <li>Added alt text for image</li>
+        <li>Associated label with input using for and id</li>
+        <li>Proper indentation and formatting</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Page</title>
+</head>
+<body>
+    <header>
+        <h1>Multimedia Showcase</h1>
+        <nav>
+            <a href="#audio">Audio</a> |
+            <a href="#video">Video</a> |
+            <a href="#embedded">Embedded</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="audio">
+            <h2>Audio Content</h2>
+            <h3>Podcast Episode</h3>
+            <audio controls>
+                <source src="podcast.mp3" type="audio/mpeg">
+                <source src="podcast.ogg" type="audio/ogg">
+                <p>Your browser does not support audio.</p>
+            </audio>
+            <p>Listen to our latest podcast episode about web development.</p>
+        </section>
+        
+        <section id="video">
+            <h2>Video Content</h2>
+            <h3>Tutorial Video</h3>
+            <video controls width="640" poster="tutorial-poster.jpg">
+                <source src="tutorial.mp4" type="video/mp4">
+                <source src="tutorial.webm" type="video/webm">
+                <p>Your browser does not support video.</p>
+            </video>
+            <p>Learn HTML basics in this comprehensive tutorial.</p>
+        </section>
+        
+        <section id="embedded">
+            <h2>Embedded Content</h2>
+            <h3>Featured YouTube Video</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Featured video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Multimedia Showcase</p>
+    </footer>
+</body>
+</html>

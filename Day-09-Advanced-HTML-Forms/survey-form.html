@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1>Customer Survey Form</h1>
+    
+    <form action="/survey" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        
+        <br><br>
+        
+        <label for="satisfaction">Overall Satisfaction:</label>
+        <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" value="5">
+        <label for="satisfaction">1 (Poor) - 10 (Excellent)</label>
+        
+        <br><br>
+        
+        <label for="favorite-color">Favorite Color:</label>
+        <input type="color" id="favorite-color" name="favorite-color">
+        
+        <br><br>
+        
+        <label>How did you hear about us?</label>
+        <select id="source" name="source">
+            <option value="">Select...</option>
+            <option value="social">Social Media</option>
+            <option value="search">Search Engine</option>
+            <option value="friend">Friend/Family</option>
+            <option value="ad">Advertisement</option>
+            <option value="other">Other</option>
+        </select>
+        
+        <br><br>
+        
+        <label>Would you recommend us?</label>
+        <input type="radio" id="yes" name="recommend" value="yes">
+        <label for="yes">Yes</label>
+        
+        <input type="radio" id="no" name="recommend" value="no">
+        <label for="no">No</label>
+        
+        <input type="radio" id="maybe" name="recommend" value="maybe">
+        <label for="maybe">Maybe</label>
+        
+        <br><br>
+        
+        <label>Features you like:</label>
+        <input type="checkbox" id="feature1" name="features" value="price">
+        <label for="feature1">Price</label>
+        
+        <input type="checkbox" id="feature2" name="features" value="quality">
+        <label for="feature2">Quality</label>
+        
+        <input type="checkbox" id="feature3" name="features" value="support">
+        <label for="feature3">Support</label>
+        
+        <br><br>
+        
+        <label for="feedback">Additional Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="4" cols="40"></textarea>
+        
+        <br><br>
+        
+        <button type="submit">Submit Survey</button>
+    </form>
+</body>
+</html>

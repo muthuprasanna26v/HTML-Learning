@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Video</title>
+</head>
+<body>
+    <h1>HTML Video Element</h1>
+    
+    <h2>Basic Video</h2>
+    <video controls width="640">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+    
+    <h2>Video Attributes</h2>
+    <ul>
+        <li><strong>controls</strong> - Shows video controls</li>
+        <li><strong>autoplay</strong> - Starts playing automatically</li>
+        <li><strong>loop</strong> - Replays video when finished</li>
+        <li><strong>muted</strong> - Video starts muted</li>
+        <li><strong>poster</strong> - Image shown before video plays</li>
+        <li><strong>width/height</strong> - Video dimensions</li>
+        <li><strong>preload</strong> - How browser should load video</li>
+    </ul>
+    
+    <h2>Video with Poster</h2>
+    <video controls width="640" poster="poster.jpg">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+    
+    <h2>Responsible Autoplay</h2>
+    <p>Modern browsers block autoplay with sound. Use muted attribute if autoplay is necessary.</p>
+    <video controls autoplay muted width="640">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+</body>
+</html>

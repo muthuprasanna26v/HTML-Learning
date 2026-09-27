@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - John Doe Portfolio</title>
+    <meta name="description" content="Contact John Doe for web development projects. Fill out the contact form or reach out via email or social media.">
+</head>
+<body>
+    <header>
+        <h1>John Doe</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>Have a project in mind? Let's work together to create something amazing.</p>
+            
+            <section id="contact-info">
+                <h3>Contact Information</h3>
+                <address>
+                    <p><strong>Email:</strong> <a href="mailto:john@example.com">john@example.com</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 234 567 890</a></p>
+                    <p><strong>Location:</strong> San Francisco, CA</p>
+                </address>
+            </section>
+            
+            <section id="contact-form">
+                <h3>Send a Message</h3>
+                <form action="/contact" method="post">
+                    <fieldset>
+                        <legend>Your Information</legend>
+                        
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required autocomplete="name">
+                        
+                        <br><br>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                        
+                        <br><br>
+                        
+                        <label for="phone">Phone (Optional):</label>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel">
+                    </fieldset>
+                    
+                    <br>
+                    
+                    <fieldset>
+                        <legend>Project Details</legend>
+                        
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
+                        
+                        <br><br>
+                        
+                        <label for="project-type">Project Type:</label>
+                        <select id="project-type" name="project-type">
+                            <option value="">Select project type</option>
+                            <option value="website">Website</option>
+                            <option value="web-app">Web Application</option>
+                            <option value="ecommerce">E-commerce</option>
+                            <option value="consulting">Consulting</option>
+                            <option value="other">Other</option>
+                        </select>
+                        
+                        <br><br>
+                        
+                        <label for="budget">Budget Range:</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select budget range</option>
+                            <option value="small">$1,000 - $5,000</option>
+                            <option value="medium">$5,000 - $15,000</option>
+                            <option value="large">$15,000 - $50,000</option>
+                            <option value="enterprise">$50,000+</option>
+                        </select>
+                        
+                        <br><br>
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </fieldset>
+                    
+                    <br><br>
+                    
+                    <button type="submit">Send Message</button>
+                    <button type="reset">Clear Form</button>
+                </form>
+            </section>
+            
+            <section id="social-links">
+                <h3>Connect on Social Media</h3>
+                <nav aria-label="Social media links">
+                    <ul>
+                        <li><a href="#github" rel="noopener">GitHub</a></li>
+                        <li><a href="#linkedin" rel="noopener">LinkedIn</a></li>
+                        <li><a href="#twitter" rel="noopener">Twitter</a></li>
+                        <li><a href="#dribbble" rel="noopener">Dribbble</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 John Doe. All rights reserved.</p>
+        <nav aria-label="Footer navigation">
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="projects.html">Projects</a>
+        </nav>
+    </footer>
+</body>
+</html>

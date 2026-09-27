@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <h1>HTML Form Validation</h1>
+    
+    <form>
+        <h2>Required Field</h2>
+        <label for="required-input">Required:</label>
+        <input type="text" id="required-input" name="required-input" required>
+        
+        <br><br>
+        
+        <h2>Min and Max (Number)</h2>
+        <label for="minmax-input">Number (1-10):</label>
+        <input type="number" id="minmax-input" name="minmax-input" min="1" max="10">
+        
+        <br><br>
+        
+        <h2>Minlength and Maxlength (Text)</h2>
+        <label for="length-input">Text (3-20 characters):</label>
+        <input type="text" id="length-input" name="length-input" minlength="3" maxlength="20">
+        
+        <br><br>
+        
+        <h2>Pattern (Regex)</h2>
+        <label for="pattern-input">Zip Code (5 digits):</label>
+        <input type="text" id="pattern-input" name="pattern-input" pattern="[0-9]{5}" title="Five digit zip code">
+        
+        <br><br>
+        
+        <h2>Email Validation</h2>
+        <label for="email-input">Email:</label>
+        <input type="email" id="email-input" name="email-input" required>
+        
+        <br><br>
+        
+        <h2>Step Attribute</h2>
+        <label for="step-input">Number (step 0.5):</label>
+        <input type="number" id="step-input" name="step-input" step="0.5" min="0" max="10">
+        
+        <br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+    
+    <h2>Validation Attributes</h2>
+    <ul>
+        <li><strong>required</strong> - Field must be filled</li>
+        <li><strong>min/max</strong> - Minimum and maximum values</li>
+        <li><strong>minlength/maxlength</strong> - Text length limits</li>
+        <li><strong>pattern</strong> - Regular expression pattern</li>
+        <li><strong>step</strong> - Valid increments</li>
+    </ul>
+</body>
+</html>

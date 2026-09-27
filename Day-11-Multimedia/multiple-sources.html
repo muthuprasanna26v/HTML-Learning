@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Sources</title>
+</head>
+<body>
+    <h1>Multiple Media Sources</h1>
+    
+    <h2>Video with Multiple Formats</h2>
+    <p>The browser will choose the first format it supports:</p>
+    <video controls width="640">
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        <source src="video.ogg" type="video/ogg">
+        <p>Your browser does not support HTML video.</p>
+    </video>
+    
+    <h2>Audio with Multiple Formats</h2>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.ogg" type="audio/ogg">
+        <source src="audio.wav" type="audio/wav">
+        <p>Your browser does not support HTML audio.</p>
+    </audio>
+    
+    <h2>Why Multiple Sources?</h2>
+    <ul>
+        <li>Different browsers support different formats</li>
+        <li>Ensures compatibility across all browsers</li>
+        <li>Provides fallback options</li>
+    </ul>
+    
+    <h2>Common Video Formats</h2>
+    <ul>
+        <li>MP4 - Widely supported</li>
+        <li>WebM - Open format, good quality</li>
+        <li>Ogg - Open format</li>
+    </ul>
+    
+    <h2>Common Audio Formats</h2>
+    <ul>
+        <li>MP3 - Universal support</li>
+        <li>Ogg - Open format</li>
+        <li>WAV - Uncompressed, high quality</li>
+    </ul>
+</body>
+</html>

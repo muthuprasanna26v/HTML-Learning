@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML Attributes</title>
+</head>
+<body>
+    <h1>Advanced HTML Attributes</h1>
+    
+    <h2>Download Attribute</h2>
+    <a href="document.pdf" download="my-document.pdf">Download PDF</a>
+    
+    <h2>Contenteditable Attribute</h2>
+    <div contenteditable="true">
+        <p>Click here to edit this text.</p>
+        <p>You can add, remove, or modify content.</p>
+    </div>
+    
+    <h2>Spellcheck Attribute</h2>
+    <p spellcheck="true">This text will be spell-checked.</p>
+    <p spellcheck="false">This text will not be spell-checked.</p>
+    
+    <h2>Draggable Attribute</h2>
+    <div draggable="true">This element can be dragged.</div>
+    <div draggable="false">This element cannot be dragged.</div>
+    
+    <h2>Autocomplete Attribute</h2>
+    <form>
+        <label for="name">Name (autocomplete on):</label>
+        <input type="text" id="name" name="name" autocomplete="name">
+        
+        <br><br>
+        
+        <label for="code">Security Code (autocomplete off):</label>
+        <input type="text" id="code" name="code" autocomplete="off">
+    </form>
+    
+    <h2>Readonly and Disabled</h2>
+    <form>
+        <label for="readonly">Readonly field:</label>
+        <input type="text" id="readonly" value="Cannot be changed" readonly>
+        
+        <br><br>
+        
+        <label for="disabled">Disabled field:</label>
+        <input type="text" id="disabled" value="Cannot be interacted with" disabled>
+        
+        <br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+    
+    <h2>Multiple Attribute</h2>
+    <form>
+        <label for="files">Select multiple files:</label>
+        <input type="file" id="files" name="files" multiple>
+        
+        <br><br>
+        
+        <label for="emails">Multiple emails (comma separated):</label>
+        <input type="email" id="emails" name="emails" multiple>
+    </form>
+    
+    <h2>Pattern Attribute</h2>
+    <form>
+        <label for="zip">Zip Code (5 digits):</label>
+        <input type="text" id="zip" name="zip" pattern="[0-9]{5}" title="Five digit zip code">
+        
+        <br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+    
+    <h2>Advanced Attributes Summary</h2>
+    <ul>
+        <li><strong>download</strong> - Forces download instead of navigation</li>
+        <li><strong>contenteditable</strong> - Makes element editable</li>
+        <li><strong>spellcheck</strong> - Enables/disables spell checking</li>
+        <li><strong>draggable</strong> - Makes element draggable</li>
+        <li><strong>autocomplete</strong> - Controls form autocomplete</li>
+        <li><strong>readonly</strong> - Field is read-only but focusable</li>
+        <li><strong>disabled</strong> - Field is disabled and not focusable</li>
+        <li><strong>multiple</strong> - Allows multiple values</li>
+        <li><strong>pattern</strong> - Regex pattern for validation</li>
+    </ul>
+</body>
+</html>

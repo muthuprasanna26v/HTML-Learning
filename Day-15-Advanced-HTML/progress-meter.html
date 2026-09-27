@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress and Meter</title>
+</head>
+<body>
+    <h1>Progress and Meter Elements</h1>
+    
+    <h2>Progress Element</h2>
+    <h3>Indeterminate Progress</h3>
+    <progress></progress>
+    <p>Loading...</p>
+    
+    <h3>Determinate Progress</h3>
+    <label for="file">File progress:</label>
+    <progress id="file" max="100" value="70">70%</progress>
+    
+    <h3>Progress with JavaScript</h3>
+    <label for="task">Task progress:</label>
+    <progress id="task" max="100" value="0">0%</progress>
+    <button onclick="updateProgress()">Update Progress</button>
+    
+    <h2>Meter Element</h2>
+    <h3>Disk Usage</h3>
+    <label for="disk">Disk usage:</label>
+    <meter id="disk" min="0" max="100" low="30" high="70" optimum="50" value="45">45%</meter>
+    
+    <h3>Temperature</h3>
+    <label for="temp">Temperature:</label>
+    <meter id="temp" min="0" max="100" low="20" high="80" optimum="22" value="25">25°C</meter>
+    
+    <h3>Score</h3>
+    <label for="score">Score:</label>
+    <meter id="score" min="0" max="100" value="85">85/100</meter>
+    
+    <h2>Progress vs Meter</h2>
+    <ul>
+        <li><strong>progress</strong> - For tasks in progress (loading, uploading)</li>
+        <li><strong>meter</strong> - For scalar measurements (disk usage, temperature)</li>
+    </ul>
+    
+    <h2>Meter Attributes</h2>
+    <ul>
+        <li><strong>min</strong> - Minimum value</li>
+        <li><strong>max</strong> - Maximum value</li>
+        <li><strong>value</strong> - Current value</li>
+        <li><strong>low</strong> - Low threshold</li>
+        <li><strong>high</strong> - High threshold</li>
+        <li><strong>optimum</strong> - Optimal value</li>
+    </ul>
+</body>
+</html>

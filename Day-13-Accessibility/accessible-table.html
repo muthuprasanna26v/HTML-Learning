@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Tables</title>
+</head>
+<body>
+    <h1>Accessible Tables</h1>
+    
+    <h2>Table with Scope Attributes</h2>
+    <table>
+        <caption>Employee Salary Information</caption>
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Department</th>
+                <th scope="col">Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">John Smith</th>
+                <td>Engineering</td>
+                <td>$75,000</td>
+            </tr>
+            <tr>
+                <th scope="row">Jane Doe</th>
+                <td>Marketing</td>
+                <td>$65,000</td>
+            </tr>
+            <tr>
+                <th scope="row">Bob Johnson</th>
+                <td>Sales</td>
+                <td>$60,000</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>Complex Table with Headers</h2>
+    <table>
+        <caption>Quarterly Sales Report</caption>
+        <thead>
+            <tr>
+                <th scope="col">Region</th>
+                <th scope="col">Q1</th>
+                <th scope="col">Q2</th>
+                <th scope="col">Q3</th>
+                <th scope="col">Q4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">North</th>
+                <td>$10,000</td>
+                <td>$15,000</td>
+                <td>$20,000</td>
+                <td>$25,000</td>
+            </tr>
+            <tr>
+                <th scope="row">South</th>
+                <td>$8,000</td>
+                <td>$12,000</td>
+                <td>$18,000</td>
+                <td>$22,000</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>Table Accessibility Best Practices</h2>
+    <ul>
+        <li>Always provide a caption describing the table</li>
+        <li>Use scope="col" for column headers</li>
+        <li>Use scope="row" for row headers</li>
+        <li>Use thead, tbody, and tfoot for structure</li>
+        <li>Don't use tables for layout</li>
+        <li>Keep tables simple for screen readers</li>
+    </ul>
+</body>
+</html>

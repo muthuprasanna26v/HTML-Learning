@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Audio</title>
+</head>
+<body>
+    <h1>HTML Audio Element</h1>
+    
+    <h2>Basic Audio</h2>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <h2>Audio Attributes</h2>
+    <ul>
+        <li><strong>controls</strong> - Shows audio controls (play, pause, volume)</li>
+        <li><strong>autoplay</strong> - Starts playing automatically (use with caution)</li>
+        <li><strong>loop</strong> - Replays audio when finished</li>
+        <li><strong>muted</strong> - Audio starts muted</li>
+        <li><strong>preload</strong> - How the browser should load the audio</li>
+    </ul>
+    
+    <h2>Audio with Multiple Sources</h2>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <h2>Best Practices</h2>
+    <p>Always provide text alternatives for audio content for accessibility.</p>
+    <p>Use autoplay sparingly as it can be disruptive to users.</p>
+</body>
+</html>

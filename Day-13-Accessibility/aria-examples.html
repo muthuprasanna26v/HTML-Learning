@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARIA Examples</title>
+</head>
+<body>
+    <h1>ARIA Examples</h1>
+    
+    <h2>ARIA Label</h2>
+    <button aria-label="Close dialog">X</button>
+    
+    <h2>ARIA Describedby</h2>
+    <label for="password">Password:</label>
+    <input type="password" id="password" aria-describedby="password-help">
+    <p id="password-help">Password must be at least 8 characters long.</p>
+    
+    <h2>ARIA Live Regions</h2>
+    <div aria-live="polite" id="status-message"></div>
+    <button onclick="document.getElementById('status-message').textContent = 'Form submitted successfully!'">Submit Form</button>
+    
+    <h2>ARIA Expanded</h2>
+    <button aria-expanded="false" aria-controls="menu1">Toggle Menu</button>
+    <ul id="menu1" hidden>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    
+    <h2>ARIA Roles</h2>
+    <div role="alert">This is an important alert message!</div>
+    
+    <h2>ARIA Best Practices</h2>
+    <ul>
+        <li>Use native HTML semantics first</li>
+        <li>Only use ARIA when necessary</li>
+        <li>Don't override native semantics</li>
+        <li>Test with screen readers</li>
+        <li>Use aria-live for dynamic content</li>
+        <li>Use aria-label for icon-only buttons</li>
+    </ul>
+    
+    <h2>Important Note</h2>
+    <p><strong>First rule of ARIA: If you can use a native HTML element with built-in semantics and behavior, do that instead of using ARIA.</strong></p>
+</body>
+</html>

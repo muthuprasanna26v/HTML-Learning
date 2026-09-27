@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+</head>
+<body>
+    <h1>Responsive Images</h1>
+    
+    <h2>srcset Attribute</h2>
+    <img src="image-800.jpg" 
+         srcset="image-400.jpg 400w,
+                 image-800.jpg 800w,
+                 image-1200.jpg 1200w"
+         sizes="(max-width: 600px) 400px,
+                (max-width: 900px) 800px,
+                1200px"
+         alt="Responsive image example">
+    
+    <h2>Picture Element</h2>
+    <picture>
+        <source media="(max-width: 600px)" srcset="image-small.jpg">
+        <source media="(max-width: 900px)" srcset="image-medium.jpg">
+        <source srcset="image-large.jpg">
+        <img src="image-large.jpg" alt="Responsive image using picture element">
+    </picture>
+    
+    <h2>Art Direction with Picture</h2>
+    <picture>
+        <source media="(orientation: portrait)" srcset="portrait.jpg">
+        <source media="(orientation: landscape)" srcset="landscape.jpg">
+        <img src="landscape.jpg" alt="Image that changes based on orientation">
+    </picture>
+    
+    <h2>Image Formats</h2>
+    <picture>
+        <source srcset="image.webp" type="image/webp">
+        <source srcset="image.jpg" type="image/jpeg">
+        <img src="image.jpg" alt="Image with format fallback">
+    </picture>
+    
+    <h2>Responsive Image Best Practices</h2>
+    <ul>
+        <li>Use srcset for resolution switching</li>
+        <li>Use picture for art direction</li>
+        <li>Provide appropriate sizes for different devices</li>
+        <li>Use modern formats like WebP with fallbacks</li>
+        <li>Always include alt text</li>
+        <li>Optimize image file sizes</li>
+    </ul>
+</body>
+</html>

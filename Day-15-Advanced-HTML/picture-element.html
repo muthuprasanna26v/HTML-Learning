@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Element</title>
+</head>
+<body>
+    <h1>Picture Element</h1>
+    
+    <h2>Basic Picture Element</h2>
+    <picture>
+        <source srcset="image.webp" type="image/webp">
+        <source srcset="image.jpg" type="image/jpeg">
+        <img src="image.jpg" alt="Image with WebP fallback">
+    </picture>
+    
+    <h2>Responsive Breakpoints</h2>
+    <picture>
+        <source media="(min-width: 1200px)" srcset="image-xl.jpg">
+        <source media="(min-width: 768px)" srcset="image-lg.jpg">
+        <source media="(min-width: 480px)" srcset="image-md.jpg">
+        <img src="image-sm.jpg" alt="Responsive image with breakpoints">
+    </picture>
+    
+    <h2>Dark Mode Images</h2>
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="dark-image.jpg">
+        <source media="(prefers-color-scheme: light)" srcset="light-image.jpg">
+        <img src="light-image.jpg" alt="Image that changes with color scheme">
+    </picture>
+    
+    <h2>High DPI Displays</h2>
+    <picture>
+        <source srcset="image-2x.jpg 2x, image-3x.jpg 3x">
+        <img src="image-1x.jpg" alt="Image for high DPI displays">
+    </picture>
+    
+    <h2>Picture Element Use Cases</h2>
+    <ul>
+        <li>Art direction (different crops for different screens)</li>
+        <li>Format switching (WebP, AVIF, JPEG)</li>
+        <li>Responsive breakpoints</li>
+        <li>Dark mode support</li>
+        <li>High DPI display support</li>
+    </ul>
+    
+    <h2>Picture vs srcset</h2>
+    <ul>
+        <li><strong>srcset</strong> - Same image, different resolutions</li>
+        <li><strong>picture</strong> - Different images based on conditions</li>
+    </ul>
+</body>
+</html>

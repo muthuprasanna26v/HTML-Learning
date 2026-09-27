@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - La Bella Cucina</title>
+    <meta name="description" content="Contact La Bella Cucina to make a reservation or inquire about private events. Located in New York City.">
+</head>
+<body>
+    <header>
+        <h1>La Bella Cucina</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you. Make a reservation, ask about private events, or just say hello.</p>
+            
+            <section id="contact-info">
+                <h3>Contact Information</h3>
+                <address>
+                    <p><strong>Address:</strong></p>
+                    <p>123 Italian Street</p>
+                    <p>New York, NY 10001</p>
+                    
+                    <br>
+                    
+                    <p><strong>Phone:</strong></p>
+                    <p><a href="tel:+12125551234">+1 212 555 1234</a></p>
+                    
+                    <br>
+                    
+                    <p><strong>Email:</strong></p>
+                    <p><a href="mailto:info@labellacucina.com">info@labellacucina.com</a></p>
+                </address>
+            </section>
+            
+            <section id="reservation-form">
+                <h3>Make a Reservation</h3>
+                <form action="/reservation" method="post">
+                    <fieldset>
+                        <legend>Reservation Details</legend>
+                        
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required autocomplete="name">
+                        
+                        <br><br>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                        
+                        <br><br>
+                        
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required autocomplete="tel">
+                        
+                        <br><br>
+                        
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+                        
+                        <br><br>
+                        
+                        <label for="time">Time:</label>
+                        <input type="time" id="time" name="time" required>
+                        
+                        <br><br>
+                        
+                        <label for="party-size">Party Size:</label>
+                        <select id="party-size" name="party-size" required>
+                            <option value="">Select party size</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5">5 People</option>
+                            <option value="6">6 People</option>
+                            <option value="7-10">7-10 People</option>
+                            <option value="10+">10+ People (Private Event)</option>
+                        </select>
+                        
+                        <br><br>
+                        
+                        <label for="special-requests">Special Requests:</label>
+                        <textarea id="special-requests" name="special-requests" rows="3"></textarea>
+                    </fieldset>
+                    
+                    <br><br>
+                    
+                    <button type="submit">Request Reservation</button>
+                    <button type="reset">Clear Form</button>
+                </form>
+            </section>
+            
+            <section id="private-events">
+                <h3>Private Events</h3>
+                <p>Planning a special celebration? We offer private dining for events up to 50 guests. Our team will work with you to create a memorable experience with customized menus and personalized service.</p>
+                
+                <h4>Event Types</h4>
+                <ul>
+                    <li>Birthday Celebrations</li>
+                    <li>Anniversary Dinners</li>
+                    <li>Corporate Events</li>
+                    <li>Wedding Rehearsals</li>
+                    <li>Family Gatherings</li>
+                </ul>
+                
+                <p>For private event inquiries, please call us at <a href="tel:+12125551234">+1 212 555 1234</a> or email <a href="mailto:events@labellacucina.com">events@labellacucina.com</a></p>
+            </section>
+            
+            <section id="directions">
+                <h3>Getting Here</h3>
+                <h4>By Subway</h4>
+                <p>Take the A, C, E trains to 14th Street. Walk 2 blocks west.</p>
+                
+                <h4>By Bus</h4>
+                <p>M14D, M23 buses stop nearby on 8th Avenue.</p>
+                
+                <h4>Parking</h4>
+                <p>Street parking available. Public parking garage located on 13th Street.</p>
+            </section>
+        </section>
+    </main>
+    
+    <footer>
+        <section id="hours">
+            <h3>Hours</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Day</th>
+                        <th scope="col">Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Monday - Thursday</th>
+                        <td>11:00 AM - 10:00 PM</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Friday - Saturday</th>
+                        <td>11:00 AM - 11:00 PM</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sunday</th>
+                        <td>12:00 PM - 9:00 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <nav aria-label="Footer navigation">
+            <a href="index.html">Home</a> |
+            <a href="about.html">About Us</a> |
+            <a href="products.html">Menu</a>
+        </nav>
+        
+        <p>&copy; 2024 La Bella Cucina. All rights reserved.</p>
+    </footer>
+</body>
+</html>

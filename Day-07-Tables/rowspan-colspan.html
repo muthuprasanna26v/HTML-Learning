@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rowspan and Colspan</title>
+</head>
+<body>
+    <h1>Rowspan and Colspan</h1>
+    
+    <h2>Colspan Example</h2>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Quarterly Sales Report</th>
+            </tr>
+            <tr>
+                <th>Q1</th>
+                <th>Q2</th>
+                <th>Q3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>$10,000</td>
+                <td>$15,000</td>
+                <td>$20,000</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>Rowspan Example</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Region</th>
+                <th>Product</th>
+                <th>Sales</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">North</td>
+                <td>Product A</td>
+                <td>$5,000</td>
+            </tr>
+            <tr>
+                <td>Product B</td>
+                <td>$7,000</td>
+            </tr>
+            <tr>
+                <td rowspan="2">South</td>
+                <td>Product A</td>
+                <td>$4,000</td>
+            </tr>
+            <tr>
+                <td>Product B</td>
+                <td>$6,000</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>Combined Rowspan and Colspan</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th colspan="2">Sales</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>2023</th>
+                <th>2024</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Electronics</td>
+                <td>$50,000</td>
+                <td>$60,000</td>
+            </tr>
+            <tr>
+                <td>$55,000</td>
+                <td>$65,000</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

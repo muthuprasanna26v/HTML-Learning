@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Forms</title>
+</head>
+<body>
+    <h1>Accessible Forms</h1>
+    
+    <h2>Proper Label Association</h2>
+    <form>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <br><br>
+        
+        <button type="submit">Login</button>
+    </form>
+    
+    <h2>Fieldset and Legend</h2>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname">
+            
+            <br><br>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="0" max="120">
+        </fieldset>
+        
+        <br>
+        
+        <fieldset>
+            <legend>Contact Preferences</legend>
+            
+            <input type="checkbox" id="email-contact" name="contact" value="email">
+            <label for="email-contact">Email</label>
+            
+            <input type="checkbox" id="phone-contact" name="contact" value="phone">
+            <label for="phone-contact">Phone</label>
+        </fieldset>
+        
+        <br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+    
+    <h2>Form Accessibility Best Practices</h2>
+    <ul>
+        <li>Always associate labels with form controls using for and id</li>
+        <li>Use fieldset and legend for related form groups</li>
+        <li>Provide clear error messages</li>
+        <li>Use required attribute for mandatory fields</li>
+        <li>Group related radio buttons with fieldset</li>
+        <li>Provide instructions when needed</li>
+    </ul>
+</body>
+</html>

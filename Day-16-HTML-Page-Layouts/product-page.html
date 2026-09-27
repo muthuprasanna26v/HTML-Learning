@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page Layout</title>
+</head>
+<body>
+    <header>
+        <h1>TechStore</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#deals">Deals</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <article class="product-detail">
+            <header>
+                <h1>Laptop Pro 15"</h1>
+                <p class="sku">SKU: LP-15-2024</p>
+            </header>
+            
+            <section class="product-images">
+                <figure>
+                    <img src="https://via.placeholder.com/400" alt="Laptop Pro 15 inch front view">
+                    <figcaption>Front View</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/400" alt="Laptop Pro 15 inch side view">
+                    <figcaption>Side View</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/400" alt="Laptop Pro 15 inch back view">
+                    <figcaption>Back View</figcaption>
+                </figure>
+            </section>
+            
+            <section class="product-info">
+                <div class="price">
+                    <p class="current-price">$1,299.99</p>
+                    <p class="original-price">$1,499.99</p>
+                    <p class="savings">Save $200</p>
+                </div>
+                
+                <div class="rating">
+                    <p>Rating: 4.5 out of 5 stars</p>
+                    <p>(1,234 reviews)</p>
+                </div>
+                
+                <div class="availability">
+                    <p>In Stock - Ships within 24 hours</p>
+                </div>
+                
+                <form class="purchase-options">
+                    <label for="color">Color:</label>
+                    <select id="color" name="color">
+                        <option value="silver">Silver</option>
+                        <option value="space-gray">Space Gray</option>
+                        <option value="rose-gold">Rose Gold</option>
+                    </select>
+                    
+                    <br><br>
+                    
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                    
+                    <br><br>
+                    
+                    <button type="submit">Add to Cart</button>
+                    <button type="button">Add to Wishlist</button>
+                </form>
+            </section>
+            
+            <section class="product-description">
+                <h2>Product Description</h2>
+                <p>The Laptop Pro 15" is designed for professionals who demand performance and reliability. Featuring the latest processor, stunning display, and all-day battery life.</p>
+                
+                <h3>Key Features</h3>
+                <ul>
+                    <li>15.4" Retina Display</li>
+                    <li>Latest Generation Processor</li>
+                    <li>16GB RAM</li>
+                    <li>512GB SSD Storage</li>
+                    <li>All-day Battery Life</li>
+                    <li>Thunderbolt 4 Ports</li>
+                    <li>Backlit Keyboard</li>
+                    <li>Touch ID</li>
+                </ul>
+            </section>
+            
+            <section class="specifications">
+                <h2>Technical Specifications</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Specification</th>
+                            <th scope="col">Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Display</th>
+                            <td>15.4" Retina, 2880x1800</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Processor</th>
+                            <td>Latest Gen, 8-core</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Memory</th>
+                            <td>16GB Unified Memory</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Storage</th>
+                            <td>512GB SSD</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Battery</th>
+                            <td>Up to 18 hours</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Weight</th>
+                            <td>4.0 lbs</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section class="reviews">
+                <h2>Customer Reviews</h2>
+                <article>
+                    <header>
+                        <h3>Excellent Laptop for Work</h3>
+                        <p>By John D. - <time datetime="2024-01-15">January 15, 2024</time></p>
+                    </header>
+                    <p>This laptop exceeded my expectations. Fast, reliable, and the display is amazing.</p>
+                </article>
+                
+                <article>
+                    <header>
+                        <h3>Great Value for Money</h3>
+                        <p>By Sarah M. - <time datetime="2024-01-10">January 10, 2024</time></p>
+                    </header>
+                    <p>Best laptop I've ever owned. Battery life is incredible and performance is top-notch.</p>
+                </article>
+            </section>
+        </article>
+    </main>
+    
+    <aside>
+        <section class="related-products">
+            <h3>Related Products</h3>
+            <article>
+                <h4>Laptop Pro 13"</h4>
+                <p>$999.99</p>
+                <a href="#view">View Details</a>
+            </article>
+            <article>
+                <h4>Laptop Air 15"</h4>
+                <p>$899.99</p>
+                <a href="#view">View Details</a>
+            </article>
+            <article>
+                <h4>Wireless Mouse</h4>
+                <p>$49.99</p>
+                <a href="#view">View Details</a>
+            </article>
+        </section>
+        
+        <section class="support">
+            <h3>Need Help?</h3>
+            <ul>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#shipping">Shipping Info</a></li>
+                <li><a href="#returns">Returns</a></li>
+                <li><a href="#contact">Contact Support</a></li>
+            </ul>
+        </section>
+    </aside>
+    
+    <footer>
+        <p>&copy; 2024 TechStore. All rights reserved.</p>
+        <nav aria-label="Footer navigation">
+            <a href="#about">About Us</a> |
+            <a href="#privacy">Privacy Policy</a> |
+            <a href="#terms">Terms of Service</a>
+        </nav>
+    </footer>
+</body>
+</html>
